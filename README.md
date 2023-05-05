@@ -50,4 +50,4 @@ This app was developed by [Visvesh Khanna](https://github.com/visveshkhanna), wi
 ## License
 This app is licensed under the [MIT License](https://raw.githubusercontent.com/visveshkhanna/vegetablepriceapp/main/LICENSE).
 
-**Note:** This app is intended for educational and non-commercial purposes only. The prices displayed in this app may not be accurate and should not be used as a basis for trading or commercial activities.
+**Note** This app is intended for educational and non-commercial purposes only. The prices displayed in this app may not be accurate and should not be used as a basis for trading or commercial activities.
