@@ -1,10 +1,18 @@
 ## Veggie Price App
-Veggie Price App Logo
+![Veggie Price App Logo](https://raw.githubusercontent.com/visveshkhanna/vegetablepriceapp/main/assets/images/git-icon.png)
 
 A Flutter app that provides daily updates on vegetable prices in Madurai, Tamil Nadu, India. It displays the prices of various vegetables in different markets, such as retail, wholesale, and shopping mall prices. Additionally, it includes graphs that show price trends for the past seven days.
 
 ## Screenshots
-Veggie Price App Screenshots
+<table>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/visveshkhanna/vegetablepriceapp/main/assets/screenshots/s1.jpg" alt="Screenshot 1"></td>
+    <td><img src="https://raw.githubusercontent.com/visveshkhanna/vegetablepriceapp/main/assets/screenshots/s2.jpg" alt="Screenshot 2"></td>
+    <td><img src="https://raw.githubusercontent.com/visveshkhanna/vegetablepriceapp/main/assets/screenshots/s3.jpg" alt="Screenshot 3"></td>
+    <td><img src="https://raw.githubusercontent.com/visveshkhanna/vegetablepriceapp/main/assets/screenshots/s4.jpg" alt="Screenshot 4"></td>
+    <td><img src="https://raw.githubusercontent.com/visveshkhanna/vegetablepriceapp/main/assets/screenshots/s5.jpg" alt="Screenshot 5"></td>
+  </tr>
+</table>
 
 ## Features
 - Displays daily updates on vegetable prices in Madurai.
