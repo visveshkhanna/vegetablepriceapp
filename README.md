@@ -22,8 +22,11 @@ A Flutter app that provides daily updates on vegetable prices in Madurai, Tamil 
 - User-friendly design.
 
 ## Installation
-Get the relea
+To install the app, follow these steps:
 
+1. Clone the repository to your local machine.
+2. Open the project in Android Studio or Visual Studio Code.
+3. Run the app on an emulator or a physical device.
 
 ## Dependencies
 1. Flutter
