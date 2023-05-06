@@ -66,12 +66,11 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                         );
                       },
-                      leading: CircleAvatar(
-                        radius: 30,
-                        backgroundColor: Colors.transparent,
-                        backgroundImage: CachedNetworkImageProvider(
+                      leading: Image(
+                        image: CachedNetworkImageProvider(
                           finalVegetableList[index]["photourl"],
                         ),
+                        width: 70,
                       ),
                       title: Text(
                         "${finalVegetableList[index]["englishName"]}",
