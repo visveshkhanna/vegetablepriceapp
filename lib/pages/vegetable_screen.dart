@@ -83,12 +83,17 @@ class _VegetableScreenState extends State<VegetableScreen> {
               )
             : Column(
                 children: [
-                  CircleAvatar(
-                    radius: 50,
-                    backgroundColor: Colors.white,
-                    backgroundImage: CachedNetworkImageProvider(
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Image(
+                    image: CachedNetworkImageProvider(
                       widget.vegetableData["photourl"],
                     ),
+                    width: 200,
+                  ),
+                  SizedBox(
+                    height: 20,
                   ),
                   Text(
                     "Wholesale price",
@@ -139,7 +144,6 @@ class _VegetableScreenState extends State<VegetableScreen> {
                     ),
                   ),
 
-
                   // Wholesale chart
                   SizedBox(
                     height: 20,
@@ -178,7 +182,6 @@ class _VegetableScreenState extends State<VegetableScreen> {
                     ],
                   ),
                   SfCartesianChart(
-
                     tooltipBehavior: _tooltipBehavior3,
                     // Initialize category axis
                     primaryXAxis: CategoryAxis(),
@@ -197,7 +200,6 @@ class _VegetableScreenState extends State<VegetableScreen> {
                           dataLabelSettings: DataLabelSettings(isVisible: true))
                     ],
                   ),
-
 
                   // Retail Chart
                   SizedBox(
@@ -237,17 +239,14 @@ class _VegetableScreenState extends State<VegetableScreen> {
                     ],
                   ),
                   SfCartesianChart(
-
                     tooltipBehavior: _tooltipBehavior2,
                     // Initialize category axis
                     primaryXAxis: CategoryAxis(),
                     series: <LineSeries<PriceData, String>>[
                       LineSeries<PriceData, String>(
-                        // Bind data source
+                          // Bind data source
                           dataSource: <PriceData>[
-                            for (int i = 0;
-                            i < chartData["retail"].length;
-                            i++)
+                            for (int i = 0; i < chartData["retail"].length; i++)
                               PriceData(chartData["retail"][i][1].toString(),
                                   chartData["retail"][i][0]),
                           ],
@@ -300,17 +299,16 @@ class _VegetableScreenState extends State<VegetableScreen> {
                     primaryXAxis: CategoryAxis(),
                     series: <LineSeries<PriceData, String>>[
                       LineSeries<PriceData, String>(
-                        // Bind data source
+                          // Bind data source
                           dataSource: <PriceData>[
-                            for (int i = 0;
-                            i < chartData["mall"].length;
-                            i++)
+                            for (int i = 0; i < chartData["mall"].length; i++)
                               PriceData(chartData["mall"][i][1].toString(),
                                   chartData["mall"][i][0]),
                           ],
                           xValueMapper: (PriceData sales, _) => sales.date,
                           yValueMapper: (PriceData sales, _) => sales.price,
-                          dataLabelSettings: DataLabelSettings(isVisible: true)),
+                          dataLabelSettings:
+                              DataLabelSettings(isVisible: true)),
                     ],
                   ),
                 ],
