@@ -1,6 +1,5 @@
 import 'dart:convert';
 
-import 'package:html/parser.dart';
 import 'package:http/http.dart' as http;
 
 Future<Map> getVegetableChartData(String id) async {
