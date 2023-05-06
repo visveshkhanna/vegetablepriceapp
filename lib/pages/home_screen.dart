@@ -1,7 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
-import 'package:html/parser.dart';
 import 'package:vegetableapp/functions/api_fetch.dart';
 import 'package:vegetableapp/pages/vegetable_screen.dart';
 
