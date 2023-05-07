@@ -4,8 +4,8 @@ import 'package:syncfusion_flutter_charts/charts.dart';
 import 'package:vegetableapp/functions/api_fetch.dart';
 
 class VegetableScreen extends StatefulWidget {
-  final vegetableData;
-  const VegetableScreen({Key? key, required this.vegetableData})
+  final vegetableData, city;
+  const VegetableScreen({Key? key, required this.vegetableData, required this.city})
       : super(key: key);
 
   @override
@@ -33,7 +33,7 @@ class _VegetableScreenState extends State<VegetableScreen> {
     _tooltipBehavior2 = TooltipBehavior(enable: true, header: "Price");
     _tooltipBehavior3 = TooltipBehavior(enable: true, header: "Price");
 
-    getVegetableChartData(widget.vegetableData["id"]).then((value) {
+    getVegetableChartData(widget.city,widget.vegetableData["id"]).then((value) {
       setState(() {
         chartData = value;
         _isLoading = false;
