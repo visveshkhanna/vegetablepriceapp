@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:vegetableapp/functions/api_fetch.dart';
 import 'package:vegetableapp/pages/vegetable_screen.dart';
+import 'package:vegetableapp/pages/vegetable_screen_area.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -128,16 +129,28 @@ class _HomeScreenState extends State<HomeScreen> {
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20)),
                       onTap: () {
+                        SPL_CITIES.contains(city) ?
                         Navigator.push(
                           context,
                           PageRouteBuilder(
-                            pageBuilder: (_, __, ___) => VegetableScreen(
+                            pageBuilder: (_, __, ___) => VegetableAreaScreen(
                                 vegetableData: finalVegetableList[index],
                                 city: city),
                             transitionDuration: Duration(milliseconds: 150),
                             transitionsBuilder: (_, a, __, c) =>
                                 FadeTransition(opacity: a, child: c),
                           ),
+                        )
+                        : Navigator.push(
+                        context,
+                        PageRouteBuilder(
+                        pageBuilder: (_, __, ___) => VegetableScreen(
+                        vegetableData: finalVegetableList[index],
+                        city: city),
+                        transitionDuration: Duration(milliseconds: 150),
+                        transitionsBuilder: (_, a, __, c) =>
+                        FadeTransition(opacity: a, child: c),
+                        ),
                         );
                       },
                       leading: Image(
